@@ -1,0 +1,43 @@
+Run: runs/20261001-104551-2692
+Stop: duration_limit
+Completed rounds: 150
+Completed billing periods: 15; partial period rounds: 0
+Configuration: N=20, c=10, k=6, group=2048 bits
+Elapsed wall time incl. shutdown: 4500.047674 s
+Parent CPU: 73.835990 s; all children CPU: 1133.140110 s
+Parent peak RSS: 7448 KiB; largest child peak RSS: 5536 KiB
+RSS values are process-specific high-water marks, NOT simultaneous total memory.
+Remote protocol messages: 105000
+Remote protocol serialized bytes: 29250000
+Local self-deliveries excluded from remote totals: 5100
+Mean remote message size: 278.57 bytes
+Byte totals include protocol headers and AEAD tags; exclude OS socket overhead and key provisioning.
+Rejected incoming messages: 0
+spatial outputs: {'verified_complete': 150}
+bill outputs: {'verified_complete': 300}
+Accepted outputs disagreeing with independent plaintext oracle: 0
+Round processing wall seconds: mean=8.052581, median=7.980882, max=8.661001
+Round wall times include selection at billing boundaries and billing at closure; exclude deliberate pacing waits.
+
+Phase, calls, total measured wall seconds, total measured CPU seconds:
+billing_reconstruction_verify, 300, 7.779874626, 7.778617978
+billing_report, 150, 0.064009225, 0.063966282
+committee_selection, 315, 0.033279363, 0.033199770
+period_reset, 315, 0.008545671, 0.007693001
+randomness_commit, 300, 0.207603111, 0.207505292
+randomness_reveal, 300, 0.129429338, 0.129289349
+reading_commitment_and_shares, 3000, 83.980012729, 83.952223175
+receive_authenticate_accumulate, 110100, 1096.976715011, 1095.848806274
+round_coverage, 3150, 0.306138377, 0.304424619
+round_reset, 3150, 0.030985586, 0.025922589
+shutdown, 21, 0.000192108, 0.000147929
+spatial_reconstruction_verify, 150, 3.896790858, 3.896211906
+spatial_report, 1500, 0.064404175, 0.064003981
+
+Selection events: 15
+Expected selections/meter under uniform sampling: 7.500
+Observed selections: {1: 12, 2: 10, 3: 9, 4: 9, 5: 9, 6: 3, 7: 10, 8: 8, 9: 5, 10: 6, 11: 9, 12: 5, 13: 6, 14: 5, 15: 10, 16: 6, 17: 6, 18: 9, 19: 7, 20: 6}
+These descriptive counts are not proof of unbiased/adversary-resistant randomness.
+
+Host, compiler and library information: see environment.txt.
+Security assumptions, excluded costs and partial-bill semantics: docs/PROTOCOL.md.

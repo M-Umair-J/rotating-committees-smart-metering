@@ -1,0 +1,13 @@
+/meter-sim
+/crypto-test
+*.o
+__pycache__/
+*.pyc
+.venv/
+
+/experiment-results.zip
+
+# Preserve the paper experiment; ignore newly generated runs.
+/runs/*
+!/runs/20261001-104551-2692/
+!/runs/README.md

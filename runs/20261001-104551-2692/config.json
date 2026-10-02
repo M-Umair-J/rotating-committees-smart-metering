@@ -1,0 +1,1 @@
+{"meters":20,"committee_size":10,"threshold":6,"rounds":0,"billing_rounds":10,"interval_seconds":30.000000,"duration_seconds":4500.000000,"historical_seconds_per_reading":300,"seed":42,"group_bits":2048,"attack":"none","attack_round":2,"csv_source":false,"tariffs_microCAD_per_Wh":[98,157,203]}
